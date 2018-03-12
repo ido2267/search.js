@@ -7,7 +7,7 @@ var searchString =  process.argv[3];
 // recursive search for all files under current directory
 function dig (dir) {
 
-   // console.log ('[+]',dir);
+   // console.log ('[+]',dir); -- optional, if you want to show the parent directory
     var files=  fs.readdirSync  (dir);
     for (var i in files) {
 
